@@ -9,7 +9,12 @@ import UseEffectExamole from '../component/UseEffectExamole'
 import RoutingExample from '../component/RoutingExample'
 import DynamicRouting from '../component/DynamicRouting'
 import RealDynamicRouting from '../component/RealDynamicRouting'
-
+import PropsEx from '../component/PropsEx'
+import UseNavigate from '../component/UseNavigate'
+import Home1 from '../Pages/Home1'
+import About1 from '../Pages/About1'
+import Contatc1 from '../Pages/Contatc1'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
  
@@ -29,9 +34,22 @@ const App = () => {
 
 
 {/* <DynamicRouting/> */}
-<RealDynamicRouting/>
+{/* <RealDynamicRouting/> */}
+
+
+{/* <PropsEx name='jaya' age='12'/>
+ */}
+
+
+    
+<UseNavigate/>
+
+ <Routes>
+        <Route path='/about' element={<About1/>}/>
+      </Routes>
 
 </div>
+
  </>
 
 
